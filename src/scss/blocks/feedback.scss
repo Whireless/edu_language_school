@@ -1,0 +1,52 @@
+@use "variables" as *;
+
+.feedback {
+	margin-top: 40px;
+}
+
+.feedback__block {
+	display: grid;
+	grid-template-columns: 250px 520px;
+	grid-template-rows: 25px 95px 45px;
+	column-gap: 80px;
+	row-gap: 27px;
+	width: max-content;
+	margin: 0 auto;
+}
+
+.feedback__img {
+	grid-row: 1/-1;
+}
+
+.feedback__description {
+	color: $grey;
+}
+
+.feedback__form {
+	display: flex;
+	column-gap: 15px;
+}
+
+.feedback__input {
+	padding: 10px 15px;
+	border-radius: 10px;
+	border: 1px solid $grey;
+}
+
+.feedback__subscribe {
+	color: $whitesmoke;
+	display: flex;
+	align-items: center;
+	background-color: $black2;
+	padding: 15px 25px;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	transition: 0.4s;
+
+	&:hover {
+		color: $black2;
+		background-color: $white;
+		border: 1px solid $black2;
+	}
+}

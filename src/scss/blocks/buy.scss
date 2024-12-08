@@ -1,0 +1,103 @@
+@use "variables" as *;
+
+.buy__title {
+	width: max-content;
+	margin: 0 auto;
+}
+
+.buy__list {
+	display: flex;
+	column-gap: 30px;
+	// justify-content: space-between;
+	width: max-content;
+	margin: 35px auto 0 auto;
+}
+
+.buy__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 10px;
+	width: 290px;
+}
+
+.buy__description {
+	text-align: justify;
+	color: $grey;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.buy__price {
+	color: $black2;
+	background-color: $grey2;
+	width: max-content;
+	padding: 5px 15px;
+	border-radius: 5px;
+	align-self: start;
+
+	span {
+		color: $lightblack;
+		font-size: 14px;
+		border-bottom: 1px solid $lightblack;
+	}
+}
+
+.buy__form {
+	// color: $whitesmoke;
+	color: $black2;
+	display: flex;
+	flex-direction: column;
+	background-color: $grey2;
+	width: max-content;
+	margin: 25px auto 0 auto;
+	padding: 20px 25px;
+	border-radius: 10px;
+	border: 1px solid $grey;
+}
+
+.buy__form-title {
+	text-align: center;
+}
+
+.buy__fieldset {
+	display: flex;
+	// flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 20px;
+	width: 620px;
+	margin-top: 20px;
+	border: none;
+
+	label {
+		display: flex;
+		flex-direction: column;
+		row-gap: 5px;
+	}
+}
+
+.buy__input {
+	padding: 7px 12px;
+	width: 260px;
+}
+
+.buy__btn-submit {
+	color: $whitesmoke;
+	width: max-content;
+	align-self: center;
+	background-color: $black2;
+	margin-top: 20px;
+	padding: 15px 25px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	transition: 0.4s;
+
+	&:hover {
+		color: $black2;
+		background-color: $white;
+		border: 1px solid $black2;
+	}
+}

@@ -1,0 +1,43 @@
+@use "variables" as *;
+
+.about__block {
+	display: grid;
+	grid-template-columns: 470px 300px;
+	grid-template-rows: 160px 55px;
+	column-gap: 80px;
+	width: max-content;
+	row-gap: 25px;
+	margin: 35px auto 0 auto;
+}
+
+.about__description {
+	color: $grey;
+	text-align: justify;
+}
+
+.about__title {
+	width: max-content;
+	margin: 0 auto;
+}
+
+.about__list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	grid-row: 2;
+}
+
+.about__item-score {
+	font-size: 25px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	span {
+		font-size: 17px;
+		font-weight: 100;
+		color: $grey;
+	}
+}

@@ -1,0 +1,21 @@
+// Общие стили
+
+@use "global";
+@use "container";
+@use "blocks/intro";
+@use "blocks/main-header";
+@use "blocks/main-nav";
+@use "blocks/main-footer";
+
+// Страница "О курсах"
+
+@use "blocks/course";
+
+// Страница "Купить курс"
+
+@use "blocks/buy";
+
+// Страница "О нас"
+
+@use "blocks/about";
+@use "blocks/feedback";

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Купить курс</title>
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<nav class="main-nav">
+				<a class="main-nav__logo" href="index.html">Lang School</a>
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="course.html">О курсах</a></li>
+					<li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Купить курс</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="about.html">О нас</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="buy">
+			<div class="container">
+				<h1 class="buy__title">Цены</h1>
+				<ul class="buy__list">
+					<li class="buy__item">
+						<img src="img/buy/online.svg" width="230" height="222" alt="">
+						<h3 class="buy__subtitle">Самостоятельный курс</h3>
+						<p class="buy__description">
+							Начните изучать языки онлайн с квалифицированными преподавателями
+							и студентами со всего мира.
+						</p>
+						<p class="buy__price">₽3000 <span>в месяц</span></p>
+					</li>
+					<li class="buy__item">
+						<img src="img/buy/class.svg" width="230" height="222" alt="">
+						<h3 class="buy__subtitle">Живые онлайн-занятия</h3>
+						<p class="buy__description">
+							Интерактивные групповые занятия с 
+							преподавателями-экспертами. Бесплатная 7-дневная пробная версия.
+						</p>
+						<p class="buy__price">₽5000 <span>в месяц</span></p>
+					</li>
+					<li class="buy__item">
+						<img src="img/buy/personal.svg" width="230" height="222" alt="">
+						<h3 class="buy__subtitle">Индивидуальное обучение</h3>
+						<p class="buy__description">
+							Онлайн-репетиторство по английскому языку один на один.
+						  Насладитесь нашим первым занятием всего за ₽100
+						</p>
+						<p class="buy__price">₽10000 <span>в месяц</span></p>
+					</li>
+				</ul>
+				<form class="buy__form" action="">
+					<p class="buy__form-title">Оставь заявку, и получи индивидуальную скидку!</p>
+					<fieldset class="buy__fieldset">
+						<label>
+							Ф.И.О*
+							<input class="buy__input buy__input--name" type="text" placeholder="Иванов Иван Иванович" required>
+						</label>
+						<label>
+							Почта*
+							<input class="buy__input buy__input--mail" type="text" placeholder="example@mail.com" required>
+						</label>
+						<label>
+							Ваш город*
+							<input class="buy__input" type="text" placeholder="Москва" required>
+						</label>
+					</fieldset>
+					<button class="buy__btn-submit" type="submit">Отправить заявку</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<div class="container">
+			<p class="main-footer__copyright">Все права защищены © Copyright 2024</p>
+		</div>
+	</footer>
+</body>
+</html>

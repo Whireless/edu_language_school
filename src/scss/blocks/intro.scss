@@ -1,0 +1,52 @@
+@use "variables" as *;
+
+.intro__block {
+	display: grid;
+	grid-template-columns: 380px 420px;
+	grid-template-rows: 110px 100px max-content;
+	row-gap: 20px;
+	column-gap: 80px;
+	width: max-content;
+	margin: 40px auto 0 auto;
+}
+
+.intro__title {
+	font-size: 35px;
+	line-height: 37px;
+}
+
+.intro__description {
+	color: $grey;
+	text-align: justify;
+}
+
+.intro__link-go {
+	color: $whitesmoke;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	background-color: $black2;
+	width: max-content;
+	padding: 15px 50px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	transition: 0.4s;
+
+	&:hover {
+		color: $black2;
+		background-color: $white;
+		border: 1px solid $black2;
+	}
+}
+
+.intro__img {
+	background-image: url("../img/lang.svg");
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 305px;
+	background-position: 0 0;
+	background-size: contain;
+	grid-row: 1/-1;
+	grid-column: 2;
+	display: block;
+}

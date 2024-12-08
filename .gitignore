@@ -1,0 +1,12 @@
+# Папки
+
+build
+node_modules
+logs
+
+# Файлы
+
+*.log
+.vscode/*
+.DS_Store
+.editorconfig

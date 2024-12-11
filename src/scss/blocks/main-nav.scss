@@ -4,6 +4,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 10px 30px;
+
+	@media (min-width: $desktop) {
+		padding: 10px 60px;
+	}
 }
 
 .main-nav__logo {
@@ -21,11 +26,19 @@
 	&:hover {
 		opacity: 0.55;
 	}
+
+	@media (min-width: $desktop) {
+		width: 113px;
+	}
 }
 
 .main-nav__list {
 	display: flex;
 	column-gap: 30px;
+
+	@media (min-width: $desktop) {
+		column-gap: 45px;
+	}
 }
 
 .main-nav__link {
@@ -40,6 +53,10 @@
 	}
 
 	&--active {
-		border-bottom: 2px solid $black;
+		border-bottom: 1px solid $black2;
+	}
+
+	@media (min-width: $desktop) {
+		padding-bottom: 4px;
 	}
 }

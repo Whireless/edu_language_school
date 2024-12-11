@@ -1,5 +1,9 @@
 @use "variables" as *;
 
+.course {
+	margin-top: 70px;
+}
+
 .course__title {
 	margin: 0 auto;
 	width: max-content;
@@ -11,6 +15,12 @@
 	gap: 11px;
 	width: max-content;
 	margin: 35px auto 0 auto;
+
+	@media (min-width: $desktop) {
+		grid-template-columns: repeat(3, 350px);
+		gap: 30px;
+		margin: 45px auto 0 auto;
+	}
 }
 
 .course__item {
@@ -19,7 +29,7 @@
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	row-gap: 26px;
+	row-gap: 25px;
 
 	&--speak {
 		height: 664px;
@@ -38,7 +48,7 @@
 	&--listen {
 		display: grid;
 		grid-template-columns: 280px 250px;
-		grid-template-rows: 21px 77px 55px;
+		grid-template-rows: 22px 85px 55px;
 		column-gap: 20px;
 		width: 578px;
 		height: 208px;
@@ -46,12 +56,25 @@
 		grid-column: 2/4;
 		grid-row: 2;
 	}
+
+	@media (min-width: $desktop) {
+		padding: 25px;
+
+		&--speak {
+			height: 697px;
+		}
+
+		&--listen {
+			grid-template-columns: 385px 250px;
+			column-gap: 30px;
+			width: 680px;
+		}
+	}
 }
 
 .course__description {
-	font-size: 16px;
-	line-height: 20px;
 	font-weight: 100;
+	text-align: justify;
 	color: $grey;
 }
 
@@ -79,6 +102,8 @@
 	background-repeat: no-repeat;
 	background-position: 50%;
 
+	align-self: center;
+
 	&--speak {
 		background-image: url("../img/speak.svg");
 	}
@@ -96,5 +121,9 @@
 
 		grid-column: 2;
 		grid-row: 1/-1;
+	}
+
+	@media (min-width: $desktop) {
+		width: 260px;
 	}
 }

@@ -9,11 +9,16 @@
 
 body {
 	font-family: 'Arial', sans-serif;
-	font-size: 18px;
-	line-height: 23px;
+	font-size: 17px;
+	line-height: 22px;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	min-height: 100vh;
 	min-width: 992px;
 	background-color: $white;
+
+	@media (min-width: $desktop) {
+		font-size: 19px;
+		line-height: 24px;
+	}
 }

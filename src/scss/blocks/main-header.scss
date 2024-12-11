@@ -1,0 +1,23 @@
+@use "variables" as *;
+
+.main-header {
+	background-color: $white;
+	position: fixed;
+	left: 0;
+	right: 0;
+	transition: 0.4s;
+
+	&--scroll {
+		background-color: $black2;
+
+		a {
+			color: $whitesmoke;
+		}
+
+		.main-nav__link {
+			&--active {
+				border-block-color: $whitesmoke;
+			}
+		}
+	}
+}

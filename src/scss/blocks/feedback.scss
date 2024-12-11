@@ -2,29 +2,48 @@
 
 .feedback {
 	margin-top: 40px;
+
+	@media (min-width: $desktop) {
+		margin-top: 45px;
+	}
 }
 
 .feedback__block {
 	display: grid;
 	grid-template-columns: 250px 520px;
-	grid-template-rows: 25px 95px 45px;
+	grid-template-rows: 25px 65px 45px;
 	column-gap: 80px;
-	row-gap: 27px;
+	row-gap: 40px;
 	width: max-content;
 	margin: 0 auto;
+
+	@media (min-width: $desktop) {
+		grid-template-columns: 250px 640px;
+		grid-template-rows: 25px 70px 50px;
+		column-gap: 100px;
+	}
 }
 
 .feedback__img {
 	grid-row: 1/-1;
+
+	@media (min-width: $desktop) {
+		height: 235px;
+	}
 }
 
 .feedback__description {
+	text-align: justify;
 	color: $grey;
 }
 
 .feedback__form {
 	display: flex;
 	column-gap: 15px;
+
+	@media (min-width: $desktop) {
+		column-gap: 25px;
+	}
 }
 
 .feedback__input {

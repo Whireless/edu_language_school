@@ -51,17 +51,17 @@ export {optimizeImages};
 
 // Копирование не изменных файлов
 
-// const copy = (done) => {
-//   src([
-//     'source/fonts/*.{woff2,woff}',
-//     'source/*.ico',
-//   ], {
-//     base: 'source'
-//   })
-//     .pipe(dest('build'))
-//   done();
-// }
-// export {copy};
+const copy = (done) => {
+  src([
+    // 'source/fonts/*.{woff2,woff}',
+    'src/*.ico',
+  ], {
+    base: 'src'
+  })
+    .pipe(dest('build'))
+  done();
+}
+export {copy};
 
 // Очистка /build перед сборкой
 
@@ -104,7 +104,7 @@ const watcher = () => {
 
 export let build = series(
   clean,
-  // copy,
+  copy,
   optimizeImages,
   parallel(
     styles,
@@ -117,7 +117,7 @@ export let build = series(
 
 export default series(
   clean,
-  // copy,
+  copy,
   optimizeImages,
   parallel(
     styles,

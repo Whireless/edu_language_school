@@ -1,5 +1,9 @@
 @use "variables" as *;
 
+.about {
+	margin-top: 70px;
+}
+
 .about__block {
 	display: grid;
 	grid-template-columns: 470px 300px;
@@ -8,6 +12,14 @@
 	width: max-content;
 	row-gap: 25px;
 	margin: 35px auto 0 auto;
+
+	@media (min-width: $desktop) {
+		grid-template-columns: 650px 300px;
+		grid-template-rows: 145px 55px;
+		column-gap: 100px;
+		row-gap: 30px;
+		margin: 45px auto 0 auto;
+	}
 }
 
 .about__description {
@@ -26,6 +38,14 @@
 	justify-content: space-between;
 
 	grid-row: 2;
+}
+
+.about__img {
+	height: 240px;
+
+	@media (min-width: $desktop) {
+		height: 230px;
+	}
 }
 
 .about__item-score {

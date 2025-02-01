@@ -90,7 +90,20 @@
 	label {
 		display: flex;
 		flex-direction: column;
+		flex-wrap: wrap;
 		row-gap: 5px;
+
+		span {
+			position: relative;
+			width: max-content;
+
+			&::after {
+				content: "*";
+				color: red;
+				position: absolute;
+				right: -10px;
+			}
+		}
 	}
 
 	@media (min-width: $desktop) {

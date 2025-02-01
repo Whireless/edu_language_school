@@ -52,20 +52,20 @@
 						<p class="buy__price">₽10000 <span>в месяц</span></p>
 					</li>
 				</ul>
-				<form class="buy__form" action="">
+				<form class="buy__form" action="mailto:example@mail.com" method="post" enctype="text/plain">
 					<p class="buy__form-title">Оставь заявку, и получи индивидуальную скидку!</p>
 					<fieldset class="buy__fieldset">
 						<label>
-							Ф.И.О*
-							<input class="buy__input buy__input--name" type="text" placeholder="Иванов Иван Иванович" required>
+							<span>Ф.И.О</span>
+							<input class="buy__input buy__input--name" type="text" name="ФИО: " placeholder="Иванов Иван Иванович" required>
 						</label>
 						<label>
-							Почта*
-							<input class="buy__input buy__input--mail" type="text" placeholder="example@mail.com" required>
+							<span>Почта</span>
+							<input class="buy__input buy__input--mail" type="text" name="Почта: " placeholder="example@mail.com" required>
 						</label>
 						<label>
-							Ваш город*
-							<input class="buy__input" type="text" placeholder="Москва" required>
+							<span>Ваш город</span>
+							<input class="buy__input" type="text" placeholder="Москва" name="Город: " required>
 						</label>
 					</fieldset>
 					<button class="buy__btn-submit" type="submit">Отправить заявку</button>
